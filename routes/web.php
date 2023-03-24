@@ -17,4 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/account', [ZohoController::class, 'account']);
+Route::get('/all', [ZohoController::class, 'index']);
+Route::get('/vendor', [ZohoController::class, 'vendor']);
 Route::get('/contact', [ZohoController::class, 'contact']);
+Route::get('/deal', [ZohoController::class, 'deal']);
